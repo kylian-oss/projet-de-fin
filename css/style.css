@@ -378,6 +378,353 @@ section .section-title {
       margin-top: 0.5rem;
     }
   }
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+  }
+  
+  .card-title1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  #btn3 {
+    margin-top: auto;
+    text-align: center;
+  }
+  
+  #btn3 button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn3 button:hover {
+    background-color: #555;
+  }
+  #tendances {
+    .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .card img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 6px;
+      }
+      
+      .card-title1 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .card-text {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      
+      #btn3 {
+        margin-top: auto;
+        text-align: center;
+      }
+      
+      #btn3 button {
+        background-color: #222;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      #btn3 button:hover {
+        background-color: #555;
+      }
+  }
+  /* Conteneur principal du panier */
+.cart-container {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+  }
+  
+  /* Titre du panier */
+  .cart-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Liste des articles du panier */
+  #cart-items {
+    margin-bottom: 20px;
+  }
+  
+  /* Total */
+  .total-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Prix */
+  #total-price {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  /* Exemple de style possible pour chaque article dans le panier */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-item-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .cart-item-price {
+    font-weight: bold;
+    color: #444;
+  }
+  @keyframes clignote {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  
+  .clignotant {
+    animation: clignote 1s infinite;
+    color: #d10000;
+  }
+  
+  /* Zoom produit */
+  .hero-zoom img {
+    transition: transform 0.4s ease;
+  }
+  
+  .hero-zoom img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Fond et padding section hero */
+  .hero-section {
+    background: #fffbe6;
+    border: 2px dashed #ffcc00;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 40px 20px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer; /* change le curseur pour indiquer l'interaction */
+  }
+  
+  /* Effet hover : translation et légère rotation */
+  .card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px)  scale(1.03);
+    z-index: 10; /* pour que la card "survole" les autres */
+  }
+  .hero-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: transform 0.5s ease;
+}
+
+.hero-section:hover .hero-image {
+  transform: scale(1.05);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.hero-content {
+  pointer-events: auto;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.btn-hero {
+  background-color: #e53935;
+  color: white;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-hero:hover {
+  background-color: #b71c1c;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablettes et petits desktops */
+@media (max-width: 992px) {
+  .hero-section {
+    height: 400px;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .btn-hero {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .hero-section {
+    height: 300px;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .btn-hero {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+    /* Empêche tout débordement horizontal */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Conteneur centralisé */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Pour aligner proprement le header */
+  header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
   
   
   

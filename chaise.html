@@ -17,15 +17,42 @@
 </head>
 <body id="chaise">
   <header>
-    <div class="logo">MAISON DÉCO</div>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="#chaise">chaises</a>
-      <a href="#sf">Sofas</a>
-      <a href="#bureaux">bureaux</a>
-      <a href="contact.html">Services</a>
-    </nav>
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo">MAISON DÉCO</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="#chaise">chaises</a>
+        <a href="#sf">Sofas</a>
+        <a href="#bureaux">bureaux</a>
+        <a href="contact.html">Services</a>
+      </nav>
+    </div>
   </header>
+  
+
+ <!-- Section Hero  -->
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Colonne texte -->
+      <div class="col-md-6 text-center text-md-left">
+        <h1 style="font-weight: bold; color: #ff8c00;">🎉 13 ANS AVEC MAISON DÉCO</h1>
+        <p style="font-size: 24px; margin-top: 10px;"><strong>CHAISE AGATA</strong> – 4 coloris – Bois Massif</p>
+        <div style="font-size: 28px; font-weight: bold;">
+          <span class="clignotant">7 500 FCFA</span> 
+          <span style="text-decoration: line-through; color: grey; font-size: 18px;">9 500 FCFA</span>
+        </div>
+        <button class="btn btn-warning mt-3 font-weight-bold">J'ACHÈTE</button>
+      </div>
+
+      <!-- Colonne image avec zoom -->
+      <div class="col-md-6 text-center hero-zoom">
+        <img src="images/chaise8.jpg" alt="Chaise AGATA" style="max-width: 80%; height: auto; border-radius: 10px;">
+      </div>
+    </div>
+  </div>
+</section>
+  
 
   <section id="chaise">
 
@@ -34,7 +61,7 @@
           <h3 class="text-center" style="margin-top: 50px;">CHAISES</h3>
           <div class="row" style="margin-top: 50px;">
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
+              <div class="card">
                 <img src="images/chaises9.jpg" alt="" height="200px"  class="card image-top">
                 <div class="card-body">
                   <h3 class="card-title1 text-center">CARVALHO</h3>
@@ -44,7 +71,7 @@
               </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
+              <div class="card" >
                 <img src="images/chaise2.jpg" alt="" height="200px"  class="card image-top">
                 <div class="card-body">
                   <h3 class="card-title1 text-center">CHAISE DJ ELIS</h3>
@@ -54,7 +81,7 @@
               </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
+              <div class="card" >
                 <img src="images/BECGF.jpg" alt="" height="200px"  class="card image-top">
                 <div class="card-body">
                   <h3 class="card-title1 text-center">DEMOLICAO</h3>
@@ -64,7 +91,7 @@
               </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
+              <div class="card">
                 <img src="images/chaise8.jpg" alt="" height="200px"  class="card image-top">
                 <div class="card-body">
                   <h3 class="card-title1 text-center">AGATA</h3>
@@ -74,7 +101,7 @@
               </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
+              <div class="card" >
                 <img src="images/chaise1.jpg" alt="" height="200px"  class="card image-top">
                 <div class="card-body">
                   <h3 class="card-title1 text-center">LINHO SAARA</h3>
@@ -84,7 +111,7 @@
               </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
+                <div class="card" >
                   <img src="images/chaises11.jpg" alt="" height="200px"  class="card image-top">
                   <div class="card-body">
                     <h3 class="card-title1 text-center">CHAISE DJ NEW</h3>
@@ -94,7 +121,7 @@
                 </div>
               </div>
               <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
+                <div class="card" >
                   <img src="images/chaises13.jpg" alt="" height="200px"  class="card image-top">
                   <div class="card-body">
                     <h3 class="card-title1 text-center">CHAISE LINHO</h3>
@@ -104,7 +131,7 @@
                 </div>
               </div>
               <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
+                <div class="card" >
                   <img src="images/chaises9.jpg" alt="" height="200px"  class="card image-top">
                   <div class="card-body">
                     <h3 class="card-title1 text-center">CHAISE TELA</h3>
@@ -293,11 +320,12 @@
      </section>
 
         <!-- PANIER -->
-<div id="cart" style="margin: 50px auto; max-width: 900px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ccc;">
-  <h2 class="text-center">🛒 Mon Panier</h2>
-  <div id="cart-items"></div>
-  <h3 class="text-center">Total : <span id="total-price">0f</span></h3>
-</div>
+        <div id="cart" class="cart-container">
+          <h2 class="text-center">🛒 Mon Panier</h2>
+          <div id="cart-items"></div>
+          <h3 class="text-center total-text">Total : <span id="total-price">0f</span></h3>
+        </div>
+        
 <!-- FIN PANIER -->
 
 <!--footer-->
