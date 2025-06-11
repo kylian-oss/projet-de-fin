@@ -361,7 +361,7 @@ section .section-title {
 
   nav a:hover {
     color:  #f4f4f4;
-    background-color:black;
+    background-color:rgb(34, 75, 49);
   }
 
   /* Responsive optionnel */
@@ -378,6 +378,9 @@ section .section-title {
       margin-top: 0.5rem;
     }
   }
+  
+  
+  
 
 
   
