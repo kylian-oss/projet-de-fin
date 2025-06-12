@@ -360,8 +360,9 @@ section .section-title {
   }
 
   nav a:hover {
-    color:  #f4f4f4;
-    background-color:rgb(34, 75, 49);
+    color: black;
+    background-color:white;
+    text-decoration: none;
   }
 
   /* Responsive optionnel */
@@ -547,33 +548,7 @@ section .section-title {
     font-weight: bold;
     color: #444;
   }
-  @keyframes clignote {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
   
-  .clignotant {
-    animation: clignote 1s infinite;
-    color: #d10000;
-  }
-  
-  /* Zoom produit */
-  .hero-zoom img {
-    transition: transform 0.4s ease;
-  }
-  
-  .hero-zoom img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Fond et padding section hero */
-  .hero-section {
-    background: #fffbe6;
-    border: 2px dashed #ffcc00;
-    border-radius: 12px;
-    margin-top: 30px;
-    padding: 40px 20px;
-  }
   .card {
     background: #fff;
     border: 1px solid #eee;
@@ -724,6 +699,29 @@ html, body {
     font-weight: bold;
     font-size: 24px;
   }
+  .promo-image-wrapper {
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+  .promo-image-wrapper:hover .promo-image {
+    transform: scale(1.05);
+  }
+  .discount-badge {
+    font-size: 1.1rem;
+    z-index: 10;
+  }
+  .promo-image-wrapper {
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+  .promo-image-wrapper:hover .promo-image {
+    transform: scale(1.05);
+  }
+  .discount-badge {
+    font-size: 1.1rem;
+    z-index: 10;
+  }
+  
   
   
   

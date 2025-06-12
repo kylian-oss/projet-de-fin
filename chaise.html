@@ -1,334 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAISON DECO-chaises</title>
-           <!--lien boostrap-->
-           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-           <!--lien boostrap-->
-          <link rel="stylesheet" href="css/style.css">
-            <!--icone-->
-       <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--icone-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maison Déco - Produits</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="chaise">
-  <header>
-    <div class="container d-flex justify-content-between align-items-center py-3">
-      <div class="logo">MAISON DÉCO</div>
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="#chaise">chaises</a>
-        <a href="#sf">Sofas</a>
-        <a href="#bureaux">bureaux</a>
-        <a href="contact.html">Services</a>
-      </nav>
-    </div>
-  </header>
-  
+<body>
+    <header class=" p-3">
+        <h1 class="text-center">Maison Déco</h1>
+        <nav class="nav justify-content-center">
+            <a href="index.html" class="nav-link text-black">Accueil</a>
+            <a href="contact.html" class="nav-link text-black">Services</a>
+            <a href="contact.html" class="nav-link text-black">Contact</a>
+        </nav>
+    </header>
 
- <!-- Section Hero  -->
-<section class="hero-section py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Colonne texte -->
-      <div class="col-md-6 text-center text-md-left">
-        <h1 style="font-weight: bold; color: #ff8c00;">🎉 13 ANS AVEC MAISON DÉCO</h1>
-        <p style="font-size: 24px; margin-top: 10px;"><strong>CHAISE AGATA</strong> – 4 coloris – Bois Massif</p>
-        <div style="font-size: 28px; font-weight: bold;">
-          <span class="clignotant">7 500 FCFA</span> 
-          <span style="text-decoration: line-through; color: grey; font-size: 18px;">9 500 FCFA</span>
-        </div>
-        <button class="btn btn-warning mt-3 font-weight-bold">J'ACHÈTE</button>
-      </div>
+    <main class="container my-4">
+        <!-- Section Chaises -->
+        <section id="chaises">
+            <h2 class="mb-4">Chaises</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 6 cartes chaises -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chaise1.jpg" class="card-img-top" alt="Chaise 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chaise Moderne</h5>
+                            <p class="card-text">Chaise en bois massif, design contemporain.</p>
+                            <p class="card-price">Prix : 12000f </p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chaise2.jpg" class="card-img-top" alt="Chaise 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chaise Vintage</h5>
+                            <p class="card-text">Chaise vintage en cuir marron.</p>
+                            <p class="card-price">Prix : 15000f </p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chaise8.jpg" class="card-img-top" alt="Chaise 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chaise Scandinave</h5>
+                            <p class="card-text">Chaise en tissu gris clair, pieds en bois.</p>
+                            <p class="card-price">Prix : 13000f </p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chaises10.jpg" class="card-img-top" alt="Chaise 4" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chaise de Jardin</h5>
+                            <p class="card-text">Chaise légère en métal, idéale pour l’extérieur.</p>
+                            <p class="card-price">Prix : 9000f </p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chaises11.jpg" class="card-img-top" alt="Chaise 5" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chaise Pliable</h5>
+                            <p class="card-text">Chaise pratique et compacte pour petits espaces.</p>
+                            <p class="card-price">Prix : 7000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chaises12.jpg" class="card-img-top" alt="Chaise 6" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chaise Design</h5>
+                            <p class="card-text">Chaise ergonomique, design élégant et minimaliste.</p>
+                            <p class="card-price">Prix : 18000f </p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Colonne image avec zoom -->
-      <div class="col-md-6 text-center hero-zoom">
-        <img src="images/chaise8.jpg" alt="Chaise AGATA" style="max-width: 80%; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+        <!-- Section Sofas -->
+        <section id="sofas" class="mt-5">
+            <h2 class="mb-4">Sofas</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 6 cartes sofas -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/sofas9.jpg" class="card-img-top" alt="Sofa 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa Classique</h5>
+                            <p class="card-text">Sofa en cuir noir, confortable et durable.</p>
+                            <p class="card-price">Prix : 70000f </p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/sofas12.jpeg" class="card-img-top" alt="Sofa 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa Contemporain</h5>
+                            <p class="card-text">Sofa gris clair, idéal pour salon moderne.</p>
+                            <p class="card-price">Prix : 85000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/sofa2.jpg" class="card-img-top" alt="Sofa 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa Modulable</h5>
+                            <p class="card-text">Sofa modulable, parfait pour grands espaces.</p>
+                            <p class="card-price">Prix : 90000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/s6.jpg" class="card-img-top" alt="Sofa 4" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa Convertible</h5>
+                            <p class="card-text">Sofa-lit pratique pour accueillir des invités.</p>
+                            <p class="card-price">Prix : 95000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/sofas11.jpg" class="card-img-top" alt="Sofa 5" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa en Velours</h5>
+                            <p class="card-text">Sofa élégant en velours bleu nuit.</p>
+                            <p class="card-price">Prix : 100000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/sofas7.jpg" class="card-img-top" alt="Sofa 6" />
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa Vintage</h5>
+                            <p class="card-text">Sofa vintage avec finition en bois.</p>
+                            <p class="card-price">Prix : 110000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Bureaux -->
+        <section id="bureaux" class="mt-5">
+            <h2 class="mb-4">Bureaux</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 6 cartes bureaux -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/table7.jpg" class="card-img-top" alt="Bureau 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bureau Moderne</h5>
+                            <p class="card-text">Bureau en bois clair avec rangements intégrés.</p>
+                            <p class="card-price">Prix : 40000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/table4.jpg" class="card-img-top" alt="Bureau 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bureau Industriel</h5>
+                            <p class="card-text">Bureau avec pieds en métal et plateau bois.</p>
+                            <p class="card-price">Prix : 45000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/table2.jpg" class="card-img-top" alt="Bureau 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bureau Minimaliste</h5>
+                            <p class="card-text">Bureau simple et fonctionnel, design épuré.</p>
+                            <p class="card-price">Prix : 38000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/table6.jpeg" class="card-img-top" alt="Bureau 4" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bureau Compact</h5>
+                            <p class="card-text">Bureau petit format pour espaces réduits.</p>
+                            <p class="card-price">Prix : 35000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/table5.jpg" class="card-img-top" alt="Bureau 5" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bureau Ergonomique</h5>
+                            <p class="card-text">Bureau avec réglage en hauteur.</p>
+                            <p class="card-price">Prix : 55000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/table1.jpg" class="card-img-top" alt="Bureau 6" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bureau Classique</h5>
+                            <p class="card-text">Bureau en bois foncé avec tiroirs.</p>
+                            <p class="card-price">Prix : 48000f</p>
+                            <button class="btn btn-primary acheter-btn">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Panier -->
+<div class="container my-5">
+  <h3 class="mb-4">🛒 Mon Panier</h3>
+  <ul id="panier-list" class="list-group mb-3"></ul>
+  <div class="d-flex justify-content-between align-items-center">
+    <strong>Total :</strong>
+    <span id="panier-total" class="fw-bold fs-5 text-success">0f</span>
   </div>
-</section>
-  
+</div>
 
-  <section id="chaise">
 
-        <!--chaises-->
-        <div class="container">
-          <h3 class="text-center" style="margin-top: 50px;">CHAISES</h3>
-          <div class="row" style="margin-top: 50px;">
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card">
-                <img src="images/chaises9.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">CARVALHO</h3>
-                  <p class="card-text text-center">6000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" >
-                <img src="images/chaise2.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">CHAISE DJ ELIS</h3>
-                  <p class="card-text text-center">14000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" >
-                <img src="images/BECGF.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">DEMOLICAO</h3>
-                  <p class="card-text text-center">22500f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card">
-                <img src="images/chaise8.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">AGATA</h3>
-                  <p class="card-text text-center">7500f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" >
-                <img src="images/chaise1.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">LINHO SAARA</h3>
-                  <p class="card-text text-center">13000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-                <div class="card" >
-                  <img src="images/chaises11.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE DJ NEW</h3>
-                    <p class="card-text text-center">13000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-3 py-md-0">
-                <div class="card" >
-                  <img src="images/chaises13.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE LINHO</h3>
-                    <p class="card-text text-center">11000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-3 py-md-0">
-                <div class="card" >
-                  <img src="images/chaises9.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE TELA</h3>
-                    <p class="card-text text-center">14000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-                <!--chaises-->
-</section>
-
-       <section id="sf">
-         <!--Sofas-->
-         <div class="container">
-          <h3 class="text-center" style="margin-top: 50px;">SOFAS</h3>
-          <div class="row" style="margin-top: 50px;">
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/sofas10.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">CARVALHO</h3>
-                  <p class="card-text text-center">6000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/sofas12.jpeg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">CHAISE DJ ELIS</h3>
-                  <p class="card-text text-center">14000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/sofas11.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">DEMOLICAO</h3>
-                  <p class="card-text text-center">22500f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/sofas7.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">AGATA</h3>
-                  <p class="card-text text-center">7500f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/sofas9.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">LINHO SAARA</h3>
-                  <p class="card-text text-center">13000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
-                  <img src="images/sofa1.JPG" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE DJ NEW</h3>
-                    <p class="card-text text-center">13000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
-                  <img src="images/sofa2.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE LINHO</h3>
-                    <p class="card-text text-center">11000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
-                  <img src="images/s6.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE TELA</h3>
-                    <p class="card-text text-center">14000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-      <!--Sofas-->
-       </section>
-
-     <section id="bureaux">
-         <!--bureaux-->
-         <div class="container">
-          <h3 class="text-center" style="margin-top: 50px;">BUREAUX</h3>
-          <div class="row" style="margin-top: 50px;">
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/b2.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">CARVALHO</h3>
-                  <p class="card-text text-center">6000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/table7.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">CHAISE DJ ELIS</h3>
-                  <p class="card-text text-center">14000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/table6.jpeg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">DEMOLICAO</h3>
-                  <p class="card-text text-center">22500f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/table5.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">AGATA</h3>
-                  <p class="card-text text-center">7500f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-              <div class="card" id="c">
-                <img src="images/table4.jpg" alt="" height="200px"  class="card image-top">
-                <div class="card-body">
-                  <h3 class="card-title1 text-center">LINHO SAARA</h3>
-                  <p class="card-text text-center">13000f</p>
-                  <div id="btn3"><button>acheter</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
-                  <img src="images/table3.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE DJ NEW</h3>
-                    <p class="card-text text-center">13000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
-                  <img src="images/table2.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE LINHO</h3>
-                    <p class="card-text text-center">11000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-3 py-md-0">
-                <div class="card" id="c">
-                  <img src="images/table1.jpg" alt="" height="200px"  class="card image-top">
-                  <div class="card-body">
-                    <h3 class="card-title1 text-center">CHAISE TELA</h3>
-                    <p class="card-text text-center">14000f</p>
-                    <div id="btn3"><button>acheter</button></div>
-                  </div>
-                </div>
-              </div>
-      <!--bureaux-->
-     </section>
-
-        <!-- PANIER -->
-        <div id="cart" class="cart-container">
-          <h2 class="text-center">🛒 Mon Panier</h2>
-          <div id="cart-items"></div>
-          <h3 class="text-center total-text">Total : <span id="total-price">0f</span></h3>
-        </div>
-        
-<!-- FIN PANIER -->
-
-<!--footer-->
+    </main>
+    <!--footer-->
 <section id="footer">
   <div class="container">
     <div class="row text-center text-xs-center text-sm-left text-md-left">
@@ -385,8 +310,10 @@
   </div>
 </section>
 <!--footer-->
-  
-  <script src="js/script.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+
